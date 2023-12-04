@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="./js/leason_js.js"></script>
+</head>
+<body>
+<section style="display: none" class="container">
+  <div class="new_promo">
+    <div class="top_promo_inner">
+      <div class="top_promo_sub_inner">
+        <div class="ua_img_inner">
+          <img src="./img/ua_flag.png" alt="Ukrainian flag">
+        </div>
+        <div class="ua_text_inner">
+          <div class="ua_text">УКРАЇНСЬКА IT-КОМПАНІЯ</div>
+        </div>
+      </div>
+    </div>
+    <div class="mid_promo_inner">
+      <div class="mid_promo_sub_inner">
+        <div class="promo_title">ПОМОГАЕМ</div>
+        <div class="animation_play_btn_inner">
+          <div class="animation_background">
+            <img src="../untitled1/img/play_btn.png" alt="Play button" class="animation_btn_img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom_promo_inner">
+      <div class="bottom_promo_sub_inner">
+        <div class="partners_left_img_inner">
+          <div class="only_img">
+            <div class="partners_img_inner">
+              <img src="./img/google.png" alt="Partners">
+            </div>
+            <div class="partners_img_inner">
+              <img src="./img/clutch.png" alt="Partners">
+            </div>
+          </div>
+          <div class="img_text">
+            <div class="partners_img_text_inner">
+              <div class="partners_text_inner">
+                <div class="partners_text">
+                  TOP seo <br> specialists
+                </div>
+              </div>
+              <div class="partners_img_text_inner_img">
+                <img class="" src="./img/rating.png" alt="Partners">
+              </div>
+            </div>
+            <div class="partners_img_text_inner">
+              <div class="partners_text_inner">
+                <div class="partners_text">
+                  TOP digital <br> agences
+                </div>
+              </div>
+              <div class="partners_img_text_img">
+                <img class="" src="./img/rating.png" alt="Partners">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_promo_text_inner">
+        БИЗНЕСУ
+      </div>
+    </div>
+    <div class="last_promo_inner">
+      <div class="last_promo_sub_inner">
+        <div class="promo_title1">рости</div>
+        <div class="summon_consultation">замовити консультацію</div>
+        <div class="promo_social_inner">
+          <ul class="promo_soc_list">
+            <li class="promo_soc_item">
+              <a href="#" class="promo_soc_link">
+                <img src="./img/fb.png" alt="">
+              </a>
+            </li>
+            <li class="promo_soc_item">
+              <a href="#" class="promo_soc_link">
+                <img src="./img/fb.png" alt="">
+              </a>
+            </li>
+            <li class="promo_soc_item">
+              <a href="#" class="promo_soc_link">
+                <img src="./img/fb.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+
+  .container {
+    background-image: url("./img/circle_bg.png");
+  }
+.new_promo{
+  display: flex;
+  flex-direction: column;
+  max-width: 1270px;
+  margin: 0 auto;
+}
+.top_promo_sub_inner{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.ua_img_inner{
+  width: 26px;
+  height: 17px;
+}
+.ua_img_inner img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.ua_text{
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #212121;
+}
+.mid_promo_sub_inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.promo_title{
+  font-weight: 600;
+  font-size: 128px;
+  line-height: 128px;
+  color: #212121;
+}
+
+.animation_background{
+  background-image: url("./img/circle_text_animation.png");
+  width: 85px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: ease-in-out 10s infinite circle_animation;
+}
+@keyframes circle_animation {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+
+  }
+}
+.bottom_promo_inner{
+  display: flex;
+  align-items: center;
+
+}
+
+.partners_left_img_inner{
+  display: flex;
+  align-items: center;
+}
+.partners_img_inner{
+  width: 128px;
+  height: 128px;
+  border: 1px solid rgba(157, 157, 157, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.only_img{
+  display: flex;
+  align-items: center;
+}
+.img_text{
+  display: flex;
+  align-items: center;
+}
+  .partners_img_text_inner{
+    width: 128px;
+    height: 128px;
+    border: 1px solid rgba(157, 157, 157, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+.partners_text{
+  text-align: center;
+}
+.bottom_promo_text_inner{
+  font-weight: 600;
+  font-size: 128px;
+  line-height: 128px;
+  color: #359EFF;
+}
+.last_promo_sub_inner{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.summon_consultation{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #E8152E;
+  padding: 22px 35px;
+}
+.promo_soc_list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.promo_title1{
+  font-weight: 600;
+  font-size: 128px;
+
+}
+</style>
+
+</body>
+</html>

@@ -1,0 +1,684 @@
+
+.systembolaget_container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.systembolaget_organization {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 65px;
+}
+
+.systembolaget_organization p {
+  margin: 0;
+}
+
+.systembolaget_map p {
+  margin: 0;
+}
+
+.advantage_list p {
+  margin: 0;
+}
+.staff_descr p {
+  margin: 0;
+}
+
+.systembolaget_info_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.sys_info_title {
+  font-family: 'Petrona';
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 43px;
+  text-align: center;
+}
+
+.sys_info_sub_title {
+  font-family: 'Petrona';
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.systembolaget_descr_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.systembolaget_descr_text p {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 0;
+  color:#000;
+  height:72px;
+  overflow: hidden;
+}
+p.show_content{
+  height:unset;
+  overflow: unset;
+}
+
+.systembolaget_descr_text_see_more_btn {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #E51136;
+  max-width: fit-content;
+  border-bottom: 1px solid transparent;
+}
+
+.systembolaget_descr_text_see_more_btn:hover {
+  border-bottom: 1px solid #E51136;
+}
+
+.systembolaget_map_wrapper {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.systembolaget_map_wrapper_left {
+  width: 49%;
+}
+
+.sys_content_inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.sys_content_sub_inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.sys_content_title {
+  font-family: 'Petrona';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#1f2933;
+}
+
+.sys_content_text p {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  color:#000;
+}
+
+.sys_conten_link_list_inner {
+  display: flex;
+  background: #C6B7A7;
+  padding: 30px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.sys_conten_link_list {
+  list-style: none;
+  margin: 0;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  position: relative;
+}
+
+.sys_conten_link {
+  color: #3E4C59;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-bottom: 1px solid #3E4C59;
+}
+
+.sys_conten_link:hover {
+  border-bottom: 1px solid transparent;
+  transition: transform 0.3s ease;
+}
+
+.systembolaget_map_wrapper_right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+}
+
+.systembolaget_map_iframe_inner {
+
+}
+
+.systembolaget_adress_wrapper {
+  background-color: #fce7eb;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /*justify-content: space-between;*/
+  justify-content: center;
+  column-gap: 35px;
+  margin-bottom: 35px;
+}
+
+.systembolaget_adress_inner {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  padding: 30px 0;
+  width: 41%;
+}
+
+.systembolaget_adress_sub_title {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.systembolaget_adress_sub_text {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.systembolaget_description_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.systembolaget_description_inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.systembolaget_description_wrapper .systembolaget_description_inner:not(:last-child) {
+  padding-bottom: 25px;
+  border-bottom: solid 1px #eee;
+  border-image-source: linear-gradient(90deg, transparent 0%, #c6b7a7 25%, #c6b7a7 75%, transparent 100%);
+  border-image-slice: 2;
+  margin-bottom: 25px;
+}
+
+.sys_desct_text {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.advantage_list_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.advantage_list_title {
+  font-family: 'Petrona';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1F2933;
+}
+
+ul.advantage_list {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.advantage_item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.advantage_item_inner {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.advantage_item_number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(229, 17, 54, .2);
+  color: rgba(229, 17, 54, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 6px;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.advantage_item_link {
+  color: rgba(198, 183, 167, 1);
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.advantage_link {
+  color: rgba(198, 183, 167, 1);
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.advantage_item_text {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+
+.advantage_text {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.advantage_text a{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: underline;
+  color: #000;
+}
+
+.advantage_text .relevanta_link{
+  color: rgba(198, 183, 167, 1);
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+}
+
+.systembolaget_map {
+  margin-bottom: 35px;
+}
+
+.advantage_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  margin-bottom: 35px;
+}
+.fact_section{
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  margin-bottom: 35px;
+}
+
+.staff_descr{
+  display:flex;
+  flex-direction:column;
+  row-gap: 35px;
+  margin-bottom: 35px;
+}
+.staff_descr_wrapper {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.staff_descr_list{
+  background-color: #f9f9f9;
+  border-radius:5px;
+}
+.staff_descr_title{
+  color:rgba(31, 41, 51, 1);
+  font-family: 'Petrona';
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding:30px 0;
+  /*padding-bottom: 10px;*/
+  border-bottom: solid 1px #eee;
+  border-image-source: linear-gradient(90deg, transparent 0%, #c6b7a7 25%, #c6b7a7 75%, transparent 100%);
+  border-image-slice: 2;
+  margin-bottom: 10px;
+}
+ul.staff_descr_list{
+  margin: 0;
+  list-style:none;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap:10px;
+  margin-bottom: 30px;
+}
+.staff_descr_item{
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.staff_descr_item span{
+  font-family: 'Petrona';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.staff_descr_text{
+  align-items:start;
+  row-gap:10px;
+}
+.staff_descr_text_title{
+  font-family: 'Petrona';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.staff_descr_text_inner{
+  display:flex;
+  flex-direction: column;
+  row-gap:5px;
+}
+.staff_descr_text_inner p{
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.acardion_section{
+  margin-bottom: 35px;
+}
+.acardion_section_title{
+  font-family: 'Petrona';
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+ul.acardion_inner{
+  margin: 0;
+  list-style:none;
+}
+.accordion_item{
+  background:#f9f9f9;
+  display: flex;
+  flex-direction: column;
+  padding:25px 30px;
+  cursor:pointer;
+}
+.acardion_trigger_block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.acardion_text{
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #E51136;
+}
+.acardion_trigger{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  height: 32px;
+  width: 32px;
+  border-radius:50%;
+  background-color:#fff;
+}
+.acardion_trigger:after{
+  width: 10px;
+  background-color:#E51136;
+  border-radius:50%;
+  content:'';
+  display:flex;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  right: 8px;
+  transition: all .1333333333s ease-in-out;
+  transform: rotate(-45deg);
+}
+.acardion_trigger:before{
+  width: 10px;
+  background-color:#E51136;
+  border-radius:50%;
+  content:'';
+  display:flex;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  transition: all .1333333333s ease-in-out;
+  left: 8px;
+  transform: rotate(45deg);
+
+}
+.accordion_drop_block{
+  display:none;
+}
+.accordion_drop_block_active{
+  display:flex;
+  padding:20px 0;
+  border-top: solid 1px #eee;
+  border-image-source: linear-gradient(90deg, transparent 0%, #c6b7a7 25%, #c6b7a7 75%, transparent 100%);
+  border-image-slice: 2;
+}
+.ani_arrow:after{
+  transform: rotate(45deg);
+}
+.ani_arrow:before{
+  transform: rotate(-45deg);
+}
+.relevanta_title{
+  font-family: 'Petrona';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.relevanta_section{
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 1025px){
+  .systembolaget_container{
+    padding: 0 24px;
+  }
+  .systembolaget_map_wrapper{
+    flex-direction:column;
+    row-gap: 35px;
+  }
+  .systembolaget_map_wrapper_left{
+    width: 100%;
+  }
+  .systembolaget_map_wrapper_right{
+    width: 100%;
+  }
+  .systembolaget_map_iframe_inner{
+    width: 100%;
+  }
+  .img_inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img_inner img{
+    width: 100%;
+  }
+  .systembolaget_adress_inner{
+    width: 45%;
+  }
+  .advantage_item{
+    align-items: flex-start;
+  }
+  .advantage_item_inner{
+    align-items: flex-start;
+    column-gap: 10px;
+  }
+  .staff_descr_item span{
+    display:unset;
+  }
+  .staff_descr_item{
+    display:unset;
+  }
+  @media screen and (max-width: 997px){
+    .systembolaget_adress_wrapper{
+      flex-direction: column;
+    }
+    .systembolaget_adress_inner{
+      width: 95%;
+    }
+  }
+}
+@media screen and (max-width: 577px){
+  .systembolaget_container{
+    padding:0 14px;
+  }
+  .sys_info_title{
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .sys_info_sub_title{
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .systembolaget_descr_text p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+  }
+  .systembolaget_descr_wrapper{
+    align-items: center;
+    row-gap: 15px;
+  }
+  .sys_content_text p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .sys_content_title{
+    font-size: 20px;
+  }
+  .sys_conten_link_list_inner{
+    flex-wrap:wrap;
+    padding:30px 20px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .sys_conten_link_list{
+    width: 47%;
+    margin-bottom: 20px;
+  }
+  .systembolaget_adress_inner{
+    flex-direction: column;
+    align-items: baseline;
+    width: 85%;
+    row-gap: 10px;
+  }
+  .systembolaget_adress_sub_title{
+    margin-bottom: 10px;
+  }
+  .advantage_list_title{
+    font-size: 20px;
+    line-height: 22px;
+  }
+  ul.staff_descr_list{
+    row-gap: 0;
+  }
+  .accordion_item{
+    padding: 20px 15px;
+  }
+  .acardion_text{
+    width: 90%;
+    font-size: 16px;
+  }
+  .relevanta_title{
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+
