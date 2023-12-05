@@ -20,3 +20,15 @@ let new_user = {
  let json_student = JSON.stringify(student);
 console.log(typeof json_student);
 console.log(json_student);
+
+// конвертация обьектов в массив
+
+let meetUp = {
+  title:"Campus",
+  room:{
+   number: 22,
+   neighbours:["Ivy", "Lee"]
+  }
+}
+console.log(meetUp);
+console.log(JSON.stringify(meetUp));
