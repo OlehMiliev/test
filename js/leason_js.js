@@ -31,4 +31,5 @@ let meetUp = {
   }
 }
 console.log(meetUp);
-console.log(JSON.stringify(meetUp));
+console.log("string" + JSON.stringify(meetUp));
+
