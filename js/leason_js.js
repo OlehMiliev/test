@@ -8,3 +8,8 @@ while (true){
 }
 console.log(sum);
 
+// zada4i
+let q = 3;
+while (q){
+  console.log(q--);
+}
