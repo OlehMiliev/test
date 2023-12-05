@@ -33,3 +33,16 @@ let meetUp = {
 console.log(meetUp);
 console.log("string" + JSON.stringify(meetUp));
 
+let room = {
+  number: 23
+};
+
+let meetup = {
+  title: "Conference",
+  participants: [{name: "John"}, {name: "Alice"}],
+  place: room // meetup ссылается на room
+};
+
+room.occupiedBy = meetup;
+
+console.log( JSON.stringify(meetup, ['title', 'participants', 'place', 'name', 'number']) );
