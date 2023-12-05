@@ -1,5 +1,5 @@
 
-let sum = 0;
+let sum = 1;
 while (true){
   let value = +prompt("enter sum",'');
   if(!value) break;
@@ -7,3 +7,4 @@ while (true){
 
 }
 console.log(sum);
+
