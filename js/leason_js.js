@@ -18,8 +18,7 @@ let new_user = {
    wife:null
  }
  let json_student = JSON.stringify(student);
-console.log(typeof json_student);
-console.log(json_student);
+
 
 // конвертация обьектов в массив
 
@@ -30,8 +29,7 @@ let meetUp = {
    neighbours:["Ivy", "Lee"]
   }
 }
-console.log(meetUp);
-console.log("string" + JSON.stringify(meetUp));
+
 
 let room = {
   number: 23
@@ -40,9 +38,12 @@ let room = {
 let meetup = {
   title: "Conference",
   participants: [{name: "John"}, {name: "Alice"}],
-  place: room // meetup ссылается на room
+  place: room
 };
 
 room.occupiedBy = meetup;
 
-console.log( JSON.stringify(meetup, ['title', 'participants', 'place', 'name', 'number']) );
+console.log(JSON.stringify(meetup,function (key,value) {
+  console.log(`${key}: ${value}`);
+  return(key == 'occupiedBy') ? undefined:value;
+}))
