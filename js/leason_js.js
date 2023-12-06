@@ -46,5 +46,6 @@ room.occupiedBy = meetup;
 console.log(JSON.stringify(meetup,function (key,value) {
   console.log(`${key}: ${value}`);
   return(key == 'occupiedBy') ? undefined:value;
-}))
-console.log('branch "new_1"')
+}));
+console.log('11')
+
