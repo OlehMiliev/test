@@ -56,5 +56,5 @@ let user_2 = {
     isEditor: true
   }
 }
-console.log(JSON.stringify(user_2,null,2))
+console.log(JSON.stringify(user_2,null,12))
 
