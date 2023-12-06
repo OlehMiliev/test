@@ -47,5 +47,14 @@ console.log(JSON.stringify(meetup,function (key,value) {
   console.log(`${key}: ${value}`);
   return(key == 'occupiedBy') ? undefined:value;
 }));
-console.log('11')
+
+let user_2 = {
+  name:"Dodik",
+  age:22,
+  roles:{
+    isAdmin: false,
+    isEditor: true
+  }
+}
+console.log(JSON.stringify(user_2,null,2))
 
