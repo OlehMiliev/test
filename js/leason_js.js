@@ -89,7 +89,21 @@
 
 // parce JSON
 
-let parseTestNum = "[1,2,3,4,5]";
+let parseTestNum = "[0,1,2,3,4,5]";
 console.log(parseTestNum)
 parseTestNum = JSON.parse(parseTestNum);
-console.log(parseTestNum[1])
+console.log(parseTestNum[2]);
+
+
+
+// Использование reviver
+// объект в видел стоки данных, превратить в объект JavaScript.
+let str = '{"title":"Conference","date":"2017-11-30T12:00:00.000Z"}';
+
+let str_meetup = JSON.parse(str,function (key, value) {
+  if (key == 'date') return new Date(value);
+  return value;
+})
+console.log(str_meetup.date.getDate());
+
+
